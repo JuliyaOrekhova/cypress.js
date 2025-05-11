@@ -2,8 +2,8 @@ describe('Проверка покупки аватара', function () {
 
     it('e2e автотест для покемонов: на покупку нового аватара для своего тренера', function () {
          cy.visit('https://pokemonbattle.ru/'); // зашли на сайт
-         cy.get('#k_email').type('scorpio-0411@yandex.ru');
-         cy.get('#k_password').type('JAN040429h');
+         cy.get('#k_email').type('user_login.ru');
+         cy.get('#k_password').type('user_password');
          cy.get('.MuiButton-root').click(); //авторизовались
          cy.wait(2000);
 
